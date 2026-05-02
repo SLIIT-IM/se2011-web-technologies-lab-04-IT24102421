@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Tech Store</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .about-note {
+            background-color: #eef7ff;
+            color: #003366;
+            padding: 10px;
+            border-left: 4px solid #3399cc;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <!-- Header -->
+    <header>
+        <img src="images/logo.png" alt="Campus Tech Store Logo" width="120" class="logo">
+        <h1>Campus Tech Store</h1>
+        <p>Your student-friendly place for tech essentials</p>
+
+        <!-- Dark Mode Button -->
+        <button id="themeBtn">Toggle Dark Mode</button>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#offers">Student Offers</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- Home -->
+        <section id="home">
+            <h2>Welcome to Campus Tech Store</h2>
+            <p>
+                We provide useful and affordable tech products for university students.
+            </p>
+
+            <img src="images/hero.jpg" alt="Students using technology" width="400">
+
+            <!-- Welcome Button -->
+            <button id="welcomeBtn">Click for Welcome Message</button>
+            <p id="welcomeMessage"></p>
+
+            <p style="color: darkgreen; font-weight: bold;">
+                This sentence is styled using inline CSS.
+            </p>
+        </section>
+
+        <!-- Products -->
+        <section id="products">
+            <h2>Our Products</h2>
+
+            <table class="product-table" id="productTable">
+                <tr>
+                    <th>Product Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Laptop</td>
+                    <td>Good for assignments</td>
+                    <td>Rs. 185000</td>
+                </tr>
+                <tr>
+                    <td>Headphones</td>
+                    <td>Useful for music</td>
+                    <td>Rs. 8500</td>
+                </tr>
+                <tr>
+                    <td>Smart Watch</td>
+                    <td>Track fitness</td>
+                    <td>Rs. 12000</td>
+                </tr>
+                <tr>
+                    <td>USB Flash Drive</td>
+                    <td>Store files</td>
+                    <td>Rs. 2500</td>
+                </tr>
+            </table>
+
+            <!-- Product Count -->
+            <p><strong>Total Products:</strong> <span id="productCount">0</span></p>
+
+            <!-- Discount -->
+            <label for="priceInput">Enter Product Price:</label><br>
+            <input type="number" id="priceInput"><br><br>
+
+            <button id="discountBtn">Calculate Discount</button>
+            <p id="discountResult"></p>
+
+            <!-- Search -->
+            <label for="searchInput">Search Product:</label><br>
+            <input type="text" id="searchInput"><br><br>
+
+            <button id="searchBtn">Search</button>
+            <p id="searchResult"></p>
+
+            <!-- Show Products -->
+            <button id="showProductsBtn">Show All Product Names</button>
+            <ul id="productListDisplay"></ul>
+
+        </section>
+
+        <!-- Offers -->
+        <section id="offers">
+            <h2>Student Offers</h2>
+
+            <ol>
+                <li>10% discount</li>
+                <li>Free delivery</li>
+                <li>Free laptop bag</li>
+            </ol>
+
+            <!-- Offers Button -->
+            <button id="offersBtn">Show Special Offer Message</button>
+            <p id="offersMessage"></p>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Campus Tech Store helps students find affordable technology.</p>
+
+            <p class="about-note">This note is styled using internal CSS.</p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <form class="contact-form" id="contactForm">
+
+                <label>Full Name:</label><br>
+                <input type="text" id="fullname"><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" id="email"><br><br>
+
+                <label>Phone:</label><br>
+                <input type="tel" id="phone"><br><br>
+
+                <label>Message:</label><br>
+                <textarea id="message"></textarea><br><br>
+
+                <input type="submit" value="Send">
+
+                <!-- Form Message -->
+                <p id="formMessage"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p>&copy; 2026 Campus Tech Store</p>
+
+        <!-- Clock -->
+        <p id="clock"></p>
+    </footer>
+
+</div>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
+```
